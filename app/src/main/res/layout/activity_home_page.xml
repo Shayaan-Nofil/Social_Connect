@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_page"
+    android:background="@drawable/main_page_clean">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6">
+            <TextView
+                android:id="@+id/hello_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:text="Social"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#39b8bf"/>
+
+            <TextView
+                android:id="@+id/connect_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/hello_text"
+                android:text="Connect"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:textColor="#ffc809"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/notif_button"
+                android:clickable="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/hello_text"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/notif_icon"
+                android:scaleX="0.7"
+                android:scaleY="0.7"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14"
+            android:paddingBottom="60dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="New Posts"
+                        android:textColor="#156f77"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_posts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="horizontal"
+                        android:scrollHorizontally="true">
+
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/taskbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="#156f77"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bthome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home_taskbar"
+            android:scaleY="0.7"
+            android:scaleX="0.65"/>
+
+        <Button
+            android:id="@+id/btsearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/search_taskbar"
+            android:scaleY="0.7"
+            android:scaleX="0.65"/>
+
+        <Button
+            android:id="@+id/btchat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/chat_taskbar"
+            android:scaleY="0.7"
+            android:scaleX="0.65"/>
+
+        <Button
+            android:id="@+id/btprofile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/profile_taskbar"
+            android:scaleY="0.7"
+            android:scaleX="0.65"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btaddcontent"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/plus_sign2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+</RelativeLayout>

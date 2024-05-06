@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_clean"
+    android:orientation="vertical">
+
+    <Button
+            android:background="@drawable/back_arrow"
+            android:id="@+id/back_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"/>
+
+    <RelativeLayout
+        android:id="@+id/home_mentor_profile"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/gray_rounded_rectangle">
+
+        <ImageView
+            android:id="@+id/mentor_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/john1"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/white_rounded_box">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mentor_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="7dp"
+                        android:text="John Cooper"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/mentor_job"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:text="UX Designer @ Google"
+                        android:textColor="@color/black"
+                        android:textSize="9sp"
+                        android:textAlignment="gravity" />
+
+                </ScrollView>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/like_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/red_heart" />
+
+            <TextView
+                android:id="@+id/like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@id/like_button"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="5dp"
+                android:text="100"
+                android:textSize="17sp"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/post_comments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_below="@id/notif_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/chat_UI"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/blue_rounded_box"
+            android:layout_marginHorizontal="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@id/chat_UI"
+            android:layout_alignEnd="@id/chat_UI"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/message_text"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="8"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:hint="Type something..."
+                android:textColorHint="@color/white"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="10dp"/>
+
+
+            <Button
+                android:id="@+id/btsend"
+                android:background="@drawable/send_icon_white"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="10dp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

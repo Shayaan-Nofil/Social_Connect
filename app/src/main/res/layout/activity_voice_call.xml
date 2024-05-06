@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cbcbcb">
+
+        <TextView
+            android:id="@+id/callerID"
+            android:text="John Cooper"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:id="@+id/calltime"
+            android:text="50:08"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/callerID"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/johncircle"
+            android:src="@drawable/john_circle"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/calltime"/>
+
+
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:background="#ddf7f6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mute_button"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mic_icon" />
+
+                <Button
+                    android:id="@+id/video_button"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/video_icon"/>
+
+                <Button
+                    android:id="@+id/switch_button"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/switch_icon"
+                    android:layout_marginEnd="30dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/end_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/end_icon"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="5dp"
+            android:background="@drawable/gray_rounded_rectangle"
+            android:layout_alignTop="@id/button_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

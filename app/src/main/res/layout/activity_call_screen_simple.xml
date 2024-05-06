@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cbcbcb">
+
+        <FrameLayout
+            android:id="@+id/remote_video_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="170dp"/>
+
+        <TextView
+            android:id="@+id/call_duration"
+            android:text="50:08"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"/>
+
+
+        <FrameLayout
+            android:id="@+id/local_video_view_container"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:background="@drawable/white_rounded_rectangle"
+            android:layout_above="@id/button_layout"
+            android:layout_alignRight="@id/button_layout"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"/>
+
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="#ddf7f6">
+
+            <Button
+                android:id="@+id/mute_button"
+                android:scaleX="0.4"
+                android:scaleY="0.27"
+                android:layout_marginStart="30dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mic_icon" />
+
+            <Button
+                android:id="@+id/video_button"
+                android:scaleX="0.4"
+                android:scaleY="0.27"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/video_icon"/>
+
+            <Button
+                android:id="@+id/switch_button"
+                android:scaleX="0.4"
+                android:scaleY="0.27"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/switch_icon"/>
+
+            <Button
+                android:id="@+id/end_button"
+                android:layout_marginEnd="30dp"
+                android:scaleX="0.4"
+                android:scaleY="0.27"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/end_icon"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="5dp"
+            android:background="@drawable/gray_rounded_rectangle"
+            android:layout_alignTop="@id/button_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

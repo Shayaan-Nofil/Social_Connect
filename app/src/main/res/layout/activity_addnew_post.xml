@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_clean">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_page_clean"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/parrel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.2">
+
+            <Button
+                android:background="@drawable/back_arrow"
+                android:id="@+id/back_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="70dp"/>
+
+            <TextView
+                android:id="@+id/addnew_text"
+                android:text="Add New POST !"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:textColor="#156f77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/back_button"
+                android:layout_marginTop="120dp"
+                />
+            <TextView
+                android:text="Help us expand!"
+                android:textSize="15sp"
+                android:textColor="#156f77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addnew_text"
+                android:layout_alignEnd="@id/addnew_text"
+                android:layout_marginTop="5dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_layout"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_square_login">
+
+            <LinearLayout
+                android:id="@+id/uploadbuttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/up_pht"
+                    android:clickable="true"
+                    android:layout_width="130dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/upload_photo"
+                    android:layout_marginStart="20dp"/>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/desc_text"
+                android:text="Description"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uploadbuttons" />
+
+            <EditText
+                android:id="@+id/desc_box"
+                android:hint="Enter Description"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:scrollHorizontally="true"
+                android:paddingLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/white_rounded_rectangle"
+                android:layout_below="@id/desc_text"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"/>
+
+
+            <Button
+                android:id="@+id/upload_button"
+                android:text="Upload"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@drawable/green_rounded_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/desc_box"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/taskbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="#156f77"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bthome"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/home_taskbar"
+            android:scaleY="0.7"
+            android:scaleX="0.7"/>
+
+        <Button
+            android:id="@+id/btsearch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/search_taskbar"
+            android:scaleY="0.7"
+            android:scaleX="0.7"/>
+
+        <Button
+            android:id="@+id/btchat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/chat_taskbar"
+            android:scaleY="0.7"
+            android:scaleX="0.7"/>
+
+        <Button
+            android:id="@+id/btprofile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/profile_taskbar"
+            android:scaleY="0.7"
+            android:scaleX="0.7"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btaddcontent"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/plus_sign2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+
+</RelativeLayout>

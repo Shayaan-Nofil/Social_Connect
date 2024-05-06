@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".individual_chat"
+    android:background="#ddf7f6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_weight="1.4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/chat_blue_box">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="85dp"
+                android:background="@drawable/back_icon_white"/>
+
+            <TextView
+                android:id="@+id/chatter_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/back_button"
+                android:layout_alignTop="@id/back_button"
+                android:layout_marginStart="10dp"
+                android:text="John Cooper"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/videocall_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="90dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/videocall_icon_white"/>
+            <Button
+                android:id="@+id/voicecall_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginTop="90dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/call_icon_white"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/messages_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6">
+
+            <ImageView
+                android:id="@+id/chat_UI"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/blue_rounded_box"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="80dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@id/chat_UI"
+                android:layout_alignEnd="@id/chat_UI"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btattach"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/clip_icon_white"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+                <ImageButton
+                    android:id="@+id/btattcontent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/gallary_icon_white"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <EditText
+                    android:id="@+id/message_text"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:hint="Type something..."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+
+                <ImageButton
+                    android:id="@+id/btcamera"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/camera_icon_white"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <ImageButton
+                    android:id="@+id/btvcrec"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/mic_icon_white"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+
+                <Button
+                    android:id="@+id/btsend"
+                    android:background="@drawable/send_icon_white"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/taskbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="#156f77"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bthome"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/home_taskbar"
+            android:scaleY="0.7"
+            android:scaleX="0.65"/>
+
+        <Button
+            android:id="@+id/btsearch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/search_taskbar"
+            android:scaleY="0.7"
+            android:scaleX="0.65"/>
+
+        <Button
+            android:id="@+id/btchat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/chat_taskbar"
+            android:scaleY="0.7"
+            android:scaleX="0.65"/>
+
+        <Button
+            android:id="@+id/btprofile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/profile_taskbar"
+            android:scaleY="0.7"
+            android:scaleX="0.65"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btaddcontent"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/plus_sign2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "479557261247",
+    "firebase_url": "https://social-connect-92415-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "social-connect-92415",
+    "storage_bucket": "social-connect-92415.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479557261247:android:82d6da6dce878b90f4730a",
+        "android_client_info": {
+          "package_name": "com.ShayaanNofil.i210450"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRIfH0C-ysKWkVV-ykv6zGJejSgh0WCkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

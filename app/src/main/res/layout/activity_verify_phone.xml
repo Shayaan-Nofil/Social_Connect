@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddf7f6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:background="@drawable/back_arrow"
+            android:id="@+id/back_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:id="@+id/verify_text"
+            android:text="Verify your phone number"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#156f77"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/back_button"/>
+
+        <LinearLayout
+            android:id="@+id/sent_code_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verify_text"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="We've sent a code to"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:text="+92 321 2242022"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#156f77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/code_circles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sent_code_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/code_circles"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+            <ImageView
+                android:src="@drawable/code_circles"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+            <ImageView
+                android:src="@drawable/code_circles"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+            <ImageView
+                android:src="@drawable/code_circles"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+            <ImageView
+                android:src="@drawable/code_circles"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/OtpText"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/code_circles"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:hint="Enter your password"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:paddingLeft="15dp"/>
+
+        <Button
+            android:id="@+id/verify_button"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/code_circles"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/green_rounded_rectangle"
+            android:text="Verify"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/sent_code_again"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verify_button"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Send code again"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/sendagain_button"
+                android:clickable="true"
+                android:text="00:20"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#156f77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sent_code_again"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentBottom="true"
+            android:background="#50c1c9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/bt1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/verify_button"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="50dp"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"/>
+                <Button
+                    android:id="@+id/bt2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/verify_button"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"/>
+                <Button
+                    android:id="@+id/bt3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/verify_button"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="50dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/verify_button"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="50dp"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"/>
+                <Button
+                    android:id="@+id/bt5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/verify_button"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"/>
+                <Button
+                    android:id="@+id/bt6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/verify_button"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="50dp"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/verify_button"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="50dp"
+                    android:text="7"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"/>
+                <Button
+                    android:id="@+id/bt8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/verify_button"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="8"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"/>
+                <Button
+                    android:id="@+id/bt9"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/verify_button"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="50dp"
+                    android:text="9"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#00FFFFFF"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="50dp"/>
+                <Button
+                    android:id="@+id/bt0"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/verify_button"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"/>
+                <Button
+                    android:id="@+id/btback"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/backspace"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="50dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
