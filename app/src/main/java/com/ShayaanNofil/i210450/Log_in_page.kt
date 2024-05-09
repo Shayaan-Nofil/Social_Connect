@@ -24,7 +24,6 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.messaging.FirebaseMessaging
 
 private lateinit var mAuth: FirebaseAuth
-private lateinit var database: DatabaseReference
 class Log_in_page : AppCompatActivity() {
 
     lateinit var email: EditText

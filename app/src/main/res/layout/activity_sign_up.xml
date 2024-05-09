@@ -208,7 +208,7 @@
 
             <TextView
                 android:id="@+id/password2_text"
-                android:text="Password must be at least 8 characters long"
+                android:text="Password must be at least 6 characters long"
                 android:textSize="10dp"
                 android:textColor="@color/white"
                 android:layout_marginLeft="30dp"

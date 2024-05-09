@@ -40,7 +40,6 @@ android {
 }
 
 dependencies {
-
     implementation ("com.squareup.okhttp3:okhttp:4.9.1")
     implementation ("com.akexorcist:screenshot-detection:1.0.2")
     implementation ("androidx.camera:camera-core:1.3.3")

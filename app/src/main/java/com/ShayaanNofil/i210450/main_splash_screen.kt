@@ -21,7 +21,6 @@ import kotlinx.coroutines.launch
 import java.util.logging.Handler
 
 class main_splash_screen : AppCompatActivity() {
-
     companion object {
         private const val REQUEST_CODE_PERMISSIONS = 10
     }

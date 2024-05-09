@@ -58,7 +58,7 @@ class sign_up : AppCompatActivity() {
             city = findViewById(R.id.city_box)
             country = findViewById(R.id.country_box)
 
-            if (email.text.isNotEmpty() && password.text.isNotEmpty() && name.text.isNotEmpty() && number.text.isNotEmpty() && city.text.isNotEmpty() && country.selectedItem.toString().isNotEmpty()){
+            if (email.text.isNotEmpty() && password.text.length >= 6 && name.text.isNotEmpty() && number.text.isNotEmpty() && city.text.isNotEmpty() && country.selectedItem.toString().isNotEmpty()){
                 signup(email.text.toString(), password.text.toString())
             }
 

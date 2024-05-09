@@ -64,7 +64,6 @@ import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.toRequestBody
 
 private lateinit var mAuth: FirebaseAuth
-private lateinit var database: DatabaseReference
 private lateinit var username: String
 class individual_chat : AppCompatActivity() {
     private var messages: Messages? = null
